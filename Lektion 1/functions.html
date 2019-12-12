@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Functions</title>
+
+    <script defer>
+
+        /* Övning 1
+        Skriv en funktion isBetween(x, from, to) som returnerar true om x ligger mellan to
+        och from och annars returnerar false
+        isBetween(10, 0, 20); // true
+        */ 
+        var between = isBetween(10, 0, 20);
+        
+        function isBetween(x, from, to) {
+            if (x > from && x < to) {
+                return true;
+            }
+            return false;
+        }
+
+        console.log(between)
+
+        /* Övning 2 
+        Skriv en funktion range(from, to) som returnerar en Array som innehåller
+        värdena mellan from och to
+        range(3, 10); // [3, 4, 5, 6, 7, 8, 9]
+        */
+
+        var myArray = range(3, 10);
+
+        function range(from, to) {
+
+            var myArray = [];
+
+            for (i = from; i < to; i++) {
+                myArray.push(i);                
+            }
+
+            return myArray;
+        }
+
+        console.log(myArray);
+
+        /* Övning 3
+        Skriv en funktion min(a, b) som returnerar det minsta värdet av a och b
+        min(20, 10); // 10*/ 
+
+        var smallestNumber = min(10, 20);
+
+        function min(a, b) {
+            
+            if(a > b) {
+                return b;
+            }
+            return a;
+        }
+
+        console.log(smallestNumber);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

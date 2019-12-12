@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>String Functions</title>
+
+    <script defer>
+
+        /* Övning 1
+        Skriv en funktion longestWord(sentence) som tar en mening, sentence, och
+        returnerar det längst ordet i meningen
+        longestWord("I love JavaScript"); // "JavaScript" */
+
+        
+        function longestWord(sentence) {
+
+            var array = sentence.split(" ");
+            var word = "";
+
+            for (var i = 0; i < array.length; i++) {
+                
+                if (array[i].length > word.length) {
+                    word = array[i];
+                }
+            }
+            return word;
+        }
+
+        var word = longestWord("I love JavaScript");
+        console.log(word);
+
+        /* Övning 2
+        Skriv en funktion reverseString(str) som tar en sträng, str, och returnerar
+        strängen baklänges
+        reverseString("Hello"); // "olleH" */
+
+        console.log(reverseString("Hello"));
+
+        function reverseString(str) {
+            var array = str.split("");
+
+            var revArray = array.reverse();
+            
+            return revArray.join("");
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
