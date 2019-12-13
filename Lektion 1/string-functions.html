@@ -13,14 +13,14 @@
         returnerar det längst ordet i meningen
         longestWord("I love JavaScript"); // "JavaScript" */
 
-        
+
         function longestWord(sentence) {
 
             var array = sentence.split(" ");
             var word = "";
 
             for (var i = 0; i < array.length; i++) {
-                
+
                 if (array[i].length > word.length) {
                     word = array[i];
                 }
@@ -42,11 +42,27 @@
             var array = str.split("");
 
             var revArray = array.reverse();
-            
+
             return revArray.join("");
         }
 
+        // Gör samma sak, fast mer komplicerat 
+
+        function reverseString2(str) {
+            var rv = "";
+
+            var i; // förtydliga att i finns utanför for-loopen
+            for (i = 0; i < str.length; i++) {
+                rv += str.charAt(str.length - 1 - i);
+            }
+            return rv;         // rv == return value
+        }
+
+        console.log(reverseString2("sirap"));
+
     </script>
+
+    
 </head>
 
 <body>
