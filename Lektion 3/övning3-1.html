@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Övning 3</title>
+</head>
+
+<body>
+
+    <script>
+
+        // let a = document.createElement("p");
+        // a.textContent = "Apple";
+        // document.body.appendChild(a);
+
+        // let b = document.createElement("p");
+        // b.textContent = "Banana";
+        // document.body.appendChild(b);
+
+        // let p = document.createElement("p");
+        // p.textContent = "Pear";
+        // document.body.appendChild(p);
+
+
+        // Istället för att skriva ut var för sig 
+        const fruits = ["Apple", "Banana", "Pear"];
+
+        for (let i = 0; i < fruits.length; i++) {
+            const p = document.createElement("p");
+            p.textContent = fruits[i];
+            document.body.appendChild(p);
+        }
+
+    </script>
+</body>
+
+</html>

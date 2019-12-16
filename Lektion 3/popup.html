@@ -1,0 +1,166 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pop-up</title>
+
+    <style>
+        #popup {
+            height: 500px;
+            width: 500px;
+            background-color: rgb(219, 226, 233);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            display: none;
+        }
+
+        #cross {
+            border: solid;
+            font-size: 2rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+            cursor: pointer;
+        }
+
+        .mask {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button>Click me!</button>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur nisi tempora alias dignissimos veritatis
+        exercitationem, inventore laboriosam, incidunt atque, repudiandae quo nobis! Modi, nemo velit facilis explicabo
+        vitae maxime molestiae!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur nisi tempora alias dignissimos veritatis
+        exercitationem, inventore laboriosam, incidunt atque, repudiandae quo nobis! Modi, nemo velit facilis explicabo
+        vitae maxime molestiae!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur nisi tempora alias dignissimos veritatis
+        exercitationem, inventore laboriosam, incidunt atque, repudiandae quo nobis! Modi, nemo velit facilis explicabo
+        vitae maxime molestiae!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur nisi tempora alias dignissimos veritatis
+        exercitationem, inventore laboriosam, incidunt atque, repudiandae quo nobis! Modi, nemo velit facilis explicabo
+        vitae maxime molestiae!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur nisi tempora alias dignissimos veritatis
+        exercitationem, inventore laboriosam, incidunt atque, repudiandae quo nobis! Modi, nemo velit facilis explicabo
+        vitae maxime molestiae!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur nisi tempora alias dignissimos veritatis
+        exercitationem, inventore laboriosam, incidunt atque, repudiandae quo nobis! Modi, nemo velit facilis explicabo
+        vitae maxime molestiae!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur nisi tempora alias dignissimos veritatis
+        exercitationem, inventore laboriosam, incidunt atque, repudiandae quo nobis! Modi, nemo velit facilis explicabo
+        vitae maxime molestiae!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur nisi tempora alias dignissimos veritatis
+        exercitationem, inventore laboriosam, incidunt atque, repudiandae quo nobis! Modi, nemo velit facilis explicabo
+        vitae maxime molestiae!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur nisi tempora alias dignissimos veritatis
+        exercitationem, inventore laboriosam, incidunt atque, repudiandae quo nobis! Modi, nemo velit facilis explicabo
+        vitae maxime molestiae!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur nisi tempora alias dignissimos veritatis
+        exercitationem, inventore laboriosam, incidunt atque, repudiandae quo nobis! Modi, nemo velit facilis explicabo
+        vitae maxime molestiae!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur nisi tempora alias dignissimos veritatis
+        exercitationem, inventore laboriosam, incidunt atque, repudiandae quo nobis! Modi, nemo velit facilis explicabo
+        vitae maxime molestiae!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur nisi tempora alias dignissimos veritatis
+        exercitationem, inventore laboriosam, incidunt atque, repudiandae quo nobis! Modi, nemo velit facilis explicabo
+        vitae maxime molestiae!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur nisi tempora alias dignissimos veritatis
+        exercitationem, inventore laboriosam, incidunt atque, repudiandae quo nobis! Modi, nemo velit facilis explicabo
+        vitae maxime molestiae!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur nisi tempora alias dignissimos veritatis
+        exercitationem, inventore laboriosam, incidunt atque, repudiandae quo nobis! Modi, nemo velit facilis explicabo
+        vitae maxime molestiae!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur nisi tempora alias dignissimos veritatis
+        exercitationem, inventore laboriosam, incidunt atque, repudiandae quo nobis! Modi, nemo velit facilis explicabo
+        vitae maxime molestiae!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur nisi tempora alias dignissimos veritatis
+        exercitationem, inventore laboriosam, incidunt atque, repudiandae quo nobis! Modi, nemo velit facilis explicabo
+        vitae maxime molestiae!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur nisi tempora alias dignissimos veritatis
+        exercitationem, inventore laboriosam, incidunt atque, repudiandae quo nobis! Modi, nemo velit facilis explicabo
+        vitae maxime molestiae!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur nisi tempora alias dignissimos veritatis
+        exercitationem, inventore laboriosam, incidunt atque, repudiandae quo nobis! Modi, nemo velit facilis explicabo
+        vitae maxime molestiae!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur nisi tempora alias dignissimos veritatis
+        exercitationem, inventore laboriosam, incidunt atque, repudiandae quo nobis! Modi, nemo velit facilis explicabo
+        vitae maxime molestiae!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur nisi tempora alias dignissimos veritatis
+        exercitationem, inventore laboriosam, incidunt atque, repudiandae quo nobis! Modi, nemo velit facilis explicabo
+        vitae maxime molestiae!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur nisi tempora alias dignissimos veritatis
+        exercitationem, inventore laboriosam, incidunt atque, repudiandae quo nobis! Modi, nemo velit facilis explicabo
+        vitae maxime molestiae!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur nisi tempora alias dignissimos veritatis
+        exercitationem, inventore laboriosam, incidunt atque, repudiandae quo nobis! Modi, nemo velit facilis explicabo
+        vitae maxime molestiae!</p>
+
+
+    <div class="mask"></div>
+    <div id="popup">
+        <p>Popup!</p>
+        <span id="cross">X</span>
+    </div>
+
+    <script>
+        function onClick() {
+            document.getElementById("popup").style.display = "block";
+            document.querySelector(".mask").style.display = "block";
+            window.addEventListener('scroll', noScroll);
+        }
+
+        function onClickClose() {
+            document.getElementById("popup").style.display = "none";
+            document.querySelector(".mask").style.display = "none";
+            window.removeEventListener('scroll', noScroll);        
+        }
+
+        function noScroll() {
+            window.scrollTo(0, 0);
+        }
+
+        document.querySelector("button").addEventListener("click", onClick);
+
+        document.getElementById("cross").addEventListener("click", onClickClose);
+
+        document.querySelector(".mask").addEventListener("click", onClickClose);
+
+
+    // Detta är som en toggel , Klicka på knappen för att visa och dölja
+
+    // const el = document.getElementById("popup");
+
+    // if (el.style.display === "block") {
+    //   el.style.display = "none";
+    // } else {
+    //   el.style.display = "block";
+    // }
+
+    // el.style.display = el.style.display === "block"
+    //   ? "none"
+    //   : "block";
+
+
+
+    </script>
+
+</body>
+
+</html>

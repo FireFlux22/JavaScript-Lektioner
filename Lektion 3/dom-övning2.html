@@ -1,0 +1,58 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Övning 2</title>
+</head>
+
+<body>
+    <div id="myDiv">
+        <span>Hello</span>
+        <p><span>World</span></p>
+        <p><span>Again</span></p>
+    </div>
+    <div>
+        <p>Test</p>
+    </div>
+
+    <script>
+
+        //    const spans = document.getElementsByTagName("span");
+
+        //    for (let i = 0; i < spans.length; i++) {
+        //        if(spans[i].textContent !== "Hello") {
+        //            const el = spans[i];
+        //            // el.style.color = "red"; gör samma sak! 
+        //            el.setAttribute("style", "color: red");
+        //        } 
+        //    }
+
+        const spans = document.querySelectorAll("p > span"); // kan skrivas som CSS
+
+        const spansArray = Array.from(spans);
+
+        for (let i = 0; i < spans.length; i++) {
+            const el = spans[i];
+            el.setAttribute("style", "color: red");
+        }
+
+        // const spans = document.querySelectorAll("p > span"); 
+
+        // const spansArray = Array.from(spans); // gör om NodeList till Array
+
+        // spansArray.forEach((el) => {
+        //     el.setAttribute("style", "color: red");
+        // });
+
+
+        // const el;
+
+        // el.remove(); // nya sättet
+        // el.parentNode.removeChild(el); // gamla sättet
+
+    </script>
+</body>
+
+</html>
