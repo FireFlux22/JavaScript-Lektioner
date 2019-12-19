@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Counter</title>
+</head>
+
+<body>
+
+    <script>
+
+        let myObject = {
+            count: 0,
+            increase: function () {
+                this.count++;
+            },
+            log: function () {
+                console.log(this.count);
+
+            }
+        }
+
+        // **THAT = THIS**
+        // let myObject = {
+        //     count: 0,
+        //     increase: function () {
+        //         this.count++;
+        //     },
+        //     log: function () {
+        //         var that = this;
+        //         const fn = function(){
+        //             console.log(that.count);
+        //         }
+
+        //         fn();
+        //     }
+        // }
+
+        // **BIND**
+        // let myObject = {
+        //     count: 0,
+        //     increase: function () {
+        //         this.count++;
+        //     },
+        //     log: function () {
+        //         const fn = function(){
+        //             console.log(this.count);
+        //         }.bind(this);
+
+        //         fn();
+        //     }
+        // }
+
+        // **ARROW**
+        // this blir samma i den "inre" function som i den yttre
+        // let myObject = {
+        //     count: 0,
+        //     increase: function () {
+        //         this.count++;
+        //     },
+        //     log: function () {
+        //         const fn = () => {
+        //             console.log(this.count);
+        //         };
+
+        //         fn();
+        //     }
+        // }
+
+        myObject.increase();
+        myObject.log();
+        myObject.increase();
+        myObject.increase();
+        myObject.increase();
+        myObject.log();
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rektangel</title>
+</head>
+
+<body>
+
+    <script>
+
+        function Rectangle(width, height){
+            this.width = width;
+            this.height = height; 
+
+        //     this.area = function () {
+        //         return this.width * this.height;
+        //     }
+        }
+
+        // Rekommenderat att skriva funktions utanför objektet så att det inte skapas 
+        // en ny function för varje nytt objekt.   
+        Rectangle.prototype.area = function(){
+            return this.width * this.height;
+        }
+
+        let rectangle = new Rectangle(2, 3);
+        console.log(rectangle.area()); // -> 6
+
+
+    </script>
+
+</body>
+
+</html>
