@@ -21,7 +21,9 @@
         }
 
         // Rekommenderat att skriva funktions utanför objektet så att det inte skapas 
-        // en ny function för varje nytt objekt.   
+        // en ny function för varje nytt objekt.  
+        // För att detta ska fungera måste det vara this.width i Rectangle. 
+        // Annars kommer inte de nya functionerna åt dem.
         Rectangle.prototype.area = function(){
             return this.width * this.height;
         }
