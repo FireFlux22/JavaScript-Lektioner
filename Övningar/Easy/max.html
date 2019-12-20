@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Max/Min</title>
+</head>
+
+<body>
+
+    <script>
+
+        function max(a, b) {
+            if (a > b) {
+                return a;
+            }
+            return b;
+        }
+
+        function min(a, b) {
+            if (a > b) {
+                return b;
+            }
+            return a;
+        }
+
+        console.log(max(1, 2)); // -> 2
+        console.log(max(25, 4)); // -> 25
+
+        console.log(min(1, 2)); // -> 1
+        console.log(min(25, 4)); // -> 4
+
+    </script>
+
+</body>
+
+</html>

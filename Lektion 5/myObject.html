@@ -1,0 +1,98 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let myObject = {
+            name: "Viktor",
+            sayHello: function () {
+                console.log("Hello " + this.name);
+            }
+        }
+        setTimeout(myObject.sayHello, 500); // funkar inte eftersom 
+        // function setTimeout inte har tillgång till myObject
+
+        const boundSayHello = myObject.sayHello.bind(this.name);
+        console.log(boundSayHello());
+
+        // **FUNKAR INTE**
+        // function Store(){
+        //     this.items = [];
+        // }
+
+        // Store.prototype.addItems = function(newItems){
+        //     newItems.forEach(function (item) {
+        //         this.items.push(item);
+        //     });
+        // };
+        // const myStore = new Store();
+        // myStore.addItems([1, 2, 3, 4]);
+
+                // ** This = That**
+        // function Store(){
+        //     this.items = [];
+        // }
+
+        // Store.prototype.addItems = function (newItems) {
+        //     var that = this;
+
+        //     newItems.forEach (function (item) {
+        //         that.items.push(item);
+        //     });
+        // };
+
+        // const myStore = new Store();
+        // myStore.addItems([1, 2, 3, 4]);
+        // console.log(myStore.items);
+
+
+            // ** Bind** 
+        // function Store(){
+        //     this.items = [];
+        // }
+
+        // Store.prototype.addItems = function (newItems) {
+
+        //     newItems.forEach (function (item) {
+        //         this.items.push(item);
+        //     }.bind(this));
+        // };
+
+        // const myStore = new Store();
+        // myStore.addItems([1, 2, 3, 4]);
+        // console.log(myStore.items);
+
+
+            // **Arrow**
+        function Store(){
+            this.items = [];
+        }
+
+        Store.prototype.addItems = function (newItems) {
+
+            const pushToList = (item) => {
+                this.items.push(item);
+            };
+
+            newItems.forEach(pushToList);
+        };
+
+        const myStore = new Store();
+
+        myStore.addItems([1, 2, 3, 4]);
+
+        console.log(myStore.items);
+
+    </script>
+
+</body>
+
+</html>

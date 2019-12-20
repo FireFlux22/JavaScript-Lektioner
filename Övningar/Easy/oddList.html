@@ -1,0 +1,30 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>oddList</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        function oddList(ar) {
+            let oddAr = [];
+
+            for (let i = 0; i < ar.length; i+=2) {
+                oddAr.push(ar[i]);                
+            }
+            return oddAr;
+        }
+
+        console.log(oddList([1, 2, 3, 4])); // -> [1, 3]
+        console.log(oddList(['Hello', 55, 'World'])); // -> ['Hello', 'World']
+
+    </script>
+</body>
+
+</html>
