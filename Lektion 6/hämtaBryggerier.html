@@ -28,7 +28,7 @@
         function reqListener() {
             // console.log(this.responseText);
 
-            const breweries = JSON.parse(this.responseText);
+            const breweries = JSON.parse(this.responseText);// responseText innehåller svaret från servern 
             renderBreweries(breweries);
         }
 
