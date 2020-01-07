@@ -40,7 +40,7 @@ function onSubmit(e) {
     postReq.open("POST", "/todos");
     postReq.setRequestHeader("Content-Type", "application/json");
 
-    const titleEl = document.getElementById("toDo");
+    const titleEl = document.getElementById("addToDo");
 
     const ob = { title: titleEl.value };
 
