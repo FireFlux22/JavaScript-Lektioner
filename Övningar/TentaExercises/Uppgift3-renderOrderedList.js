@@ -8,13 +8,13 @@
 
 function renderOrderedList (ar) {
 
-    const listEl = document.createElement("ol");
-    document.querySelector("main").appendChild(listEl);
+    const orderedList = document.createElement("ol");
+    document.querySelector("main").appendChild(orderedList);
 
     for (let i = 0; i < ar.length; i++) {
-        let listItemEl = document.createElement("li");
-        listItemEl.textContent = ar[i];
-        listEl.appendChild(listItemEl);
+        let listItem = document.createElement("li");
+        listItem.textContent = ar[i];
+        orderedList.appendChild(listItem);
     }
 }
 
