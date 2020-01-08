@@ -12,12 +12,12 @@
     <script>
 
         function getAges(ar) {
-            let newAr = []; 
+            let newAr = [];
 
             for (let i = 0; i < ar.length; i++) {
-                if(typeof ar[i].age !== "undefined") {
-                  const element = ar[i].age;
-                  newAr.push(element);
+                if (typeof ar[i].age !== "undefined") {
+                    const element = ar[i].age;
+                    newAr.push(element);
                 }
             }
             console.log(newAr);
@@ -30,8 +30,19 @@
         let objectArray = [object, object2, object3, object4];
         getAges(objectArray); // -> [54, 33];
 
+
+        // function getAges(array) {
+        //     let newArray = [];
+
+        //     for (let i = 0; i < array.length; i++) {
+        //         let object = array[i];
+        //         if (object.hasOwnProperty("age")) {
+        //             newArray.push(object.age);
+        //         }
+        //     }
+        //     return newArray;
+        // }
+
     </script>
-
 </body>
-
 </html>

@@ -1,6 +1,11 @@
 
 // http://localhost:8091
 
+// npm install
+// npm start
+
+// AJAX
+
 function fetch() {
     let oReq = new XMLHttpRequest();
     oReq.addEventListener("load", reqListener);
