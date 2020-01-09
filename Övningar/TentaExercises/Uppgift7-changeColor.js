@@ -6,6 +6,8 @@
 
 document.getElementById("color").addEventListener("change", changeColor);
 
+// kan även använda "input"
+
 function changeColor(e) {
     document.querySelector(".container").style.backgroundColor 
         = document.getElementById("color").value;
