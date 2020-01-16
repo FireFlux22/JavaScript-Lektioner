@@ -4,6 +4,9 @@ let counter = 0;
 
 document.querySelector(".addButton").addEventListener("click", onClick);
 
+
+// Overkill att skapa nya eventlyssnare varje gång vi lägger till en knapp. 
+// Lägg till eventlyssnare direkt på knappen när den skapas istället
 function addButtonListener() {
     let buttons = document.querySelectorAll("button");
 
@@ -12,6 +15,7 @@ function addButtonListener() {
         buttons[i].addEventListener("click", onClickDelete);
     }
 }
+
 
 function onClick() {
     let newButton = document.createElement("button");
